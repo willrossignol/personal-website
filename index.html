@@ -1,54 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>William Rossignol</title>
-    <link rel="icon" type="image/x-icon" href="/assets/site_icon.png" />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <script src="scripts/main.js"></script>
     <script
       src="https://kit.fontawesome.com/1e1edaaac6.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
-
   <body>
-    <nav>
-      <div id="nav-logo-section" class="nav-section">
-        <a href="#">
-          <i class="fa-solid fa-w"></i>
-        </a>
-      </div>
-      <div id="nav-link-section" class="nav-section">
-        <a href="#">About</a>
-        <a href="#">Work</a>
-      </div>
-      <div id="nav-social-section" class="nav-section">
-        <a href="#">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="#">
-          <i class="fa-brands fa-github"></i>
-        </a>
-      </div>
-    </nav>
+    <!-- Want to add transitions like this https://www.youtube.com/watch?v=T33NN_pPeNI -->
 
-    <main>
-      <div class="grid-layout">
-        <div class="grid-item grid-image">
-          <img src="assets/grid-image.JPG" />
-        </div>
-        <div class="grid-item grid-description">
-          <p>I am a student and a developer from New Brunswick, Canada.</p>
-          <p>This is a work in progress.</p>
-        </div>
-        <div class="grid-item grid-name">
-          <h1>William Rossignol</h1>
-        </div>
-        <div class="grid-item grid-contact">
-          <a href="#">Contact Me</a>
-        </div>
-      </div>
-    </main>
+    <section class="name-section">
+      <img
+        src="assets/grid-image.JPG"
+        alt="sunset at a beach whith figures looking into the horizon"
+      />
+      <h1>William Rossignol</h1>
+    </section>
+
+    <section class="about-section">
+      <h2>About me</h2>
+      <p>This is a work in progress</p>
+    </section>
+
+    <section class="projects-section">
+      <h2>Projects</h2>
+    </section>
+
+    <section class="contact-section">
+      <h2>Contact me</h2>
+    </section>
   </body>
 </html>
