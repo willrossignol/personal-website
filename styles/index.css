@@ -4,7 +4,12 @@
   --background-color: #262B2C;
   --border-color: #262B2C;
   --main-color: #89A9AE;
-  --secondary-color: #6C5A68;
+  --secondary-color: #B4ACB2;
+}
+
+a {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 body {
@@ -12,10 +17,13 @@ body {
   color: var(--main-color);
   font-family: "Poppins", sans-serif;
   max-width: 100%;
-  overflow-x: hidden;
-
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+
+.body {
+  position: relative;
+  overflow-x: hidden;
 }
 
 section {
@@ -36,4 +44,8 @@ section {
   max-height: 100vh;
   object-fit: cover;
   filter: brightness(50%) blur(2px);
+}
+
+footer {
+  text-align: center;
 }
