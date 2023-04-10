@@ -3,27 +3,48 @@
   <head>
     <title>William Rossignol</title>
     <meta lang="en-us" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <script src="scripts/Encryption.js"></script>
     <script src="scripts/main.js"></script>
   </head>
   <body>
-    <h1>William Rossignol</h1>
-    <p>Hello, World!</p>
-    <form>
-      <input
-        type="text"
-        id="plaintext"
-        name="plaintext"
-        placeholder="Message" /><br />
-      <input
-        type="number"
-        id="shift"
-        min="0"
-        max="26"
-        name="shift"
-        placeholder="Shift" /><br />
-      <input type="button" onclick="executeCaesar()" value="Caesar Cipher" />
-    </form>
-    <p>Result:</p>
-    <p id="caesar_result"></p>
+    <h1 class="name-section">William Rossignol</h1>
+    <button type="button" class="collapsible">Caesar Cipher</button>
+    <div class="content">
+      <form>
+        <input
+          type="text"
+          id="plaintext"
+          name="plaintext"
+          placeholder="Message" /><br />
+        <input
+          type="number"
+          id="shift"
+          min="0"
+          max="26"
+          name="shift"
+          placeholder="Shift" /><br />
+        <input type="button" onclick="executeCaesar()" value="Caesar Cipher" />
+      </form>
+      <p>Result:</p>
+      <p id="caesar_result"></p>
+    </div>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
